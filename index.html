@@ -160,6 +160,7 @@
 ">书源采集完善中</div><a style="display: block;background: #98a3ff;color: #FFF;text-align: center;font-weight: bold;font-size: 19px;line-height: 60px;margin: 0 auto;margin-top: 45px;border-radius: 32px;width: 80%;" onclick="javascript:document.querySelector('.web_notice').remove()">我知道了</ a></div></div>
  -->
 	</footer>
+		
      <script>
 //禁用右键（防止右键查看源代码） 
     window.oncontextmenu = function () { return false; }
@@ -178,34 +179,8 @@
     }
 </script>
 
- <script>
-//屏蔽F12和右键
- function click(e) {
- if (document.all) {
- if (event.button == 2 || event.button == 3) {
- alert("欢迎光临寒舍，有什么需要帮忙的话，请与站长联系！谢谢您的合作！！！");
-          oncontextmenu = 'return false';
-        }
-      }
- if (document.layers) {
- if (e.which == 3) {
-          oncontextmenu = 'return false';
-        }
-      }
-    }
- if (document.layers) {
-      document.captureEvents(Event.MOUSEDOWN);
-    }
-    document.onmousedown = click;
-    document.oncontextmenu = new Function("return false;")
 
-    document.onkeydown = document.onkeyup = document.onkeypress = function () {
- if (window.event.keyCode == 123) {
-        window.event.returnValue = false;
- return (false);
-      }
-    }
-	 
+
 	 
 <div style="display:none;">
 
